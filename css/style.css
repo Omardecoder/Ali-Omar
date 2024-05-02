@@ -19,7 +19,7 @@ body{
 }
 .topnav a:hover{
     color: #5f4c4c;
-    background-color: azure;
+    background-color: rgb(255, 255, 255);
     text-decoration: none;
 }
 
