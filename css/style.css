@@ -85,3 +85,15 @@ tr:nth-child(odd){
 tr:hover{
     background-color: rgb(243, 235, 225);
 }
+.contact form{
+    font-size: 1.8em;
+}
+input[type=text],input[type=email]{
+    width=60%
+    padding:14px 20px;
+    font-size:1.6em
+    border-radius:4px;
+    border:2px solid #424242 ;
+    margin:8px 0;
+    box-sizing:border-box;
+}
