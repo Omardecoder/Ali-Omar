@@ -8,16 +8,7 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <div class="topnav">
-        <a href="index.html,">Home</a> 
-        <a href="about.html">About</a> 
-        <a href="Services.html">Services</a> 
-        <a href="Products.html">Products</a> 
-        <a href="Contact.html">Contact Us</a> 
-        <a href="Testimonials.html">Testimonials</a> 
-        <a href="registration.html">Register Here</a>
-        
-</div>
+    <?php include_once("template/nav.php");?>
 <div class="header">
     <h1>Header</h1>
 

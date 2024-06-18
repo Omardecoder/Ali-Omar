@@ -6,20 +6,7 @@
 <link rel="stylesheet" href="css/style.css">
     </head>
         <body>
-            <div class="topnav">
-                <a href="index.html">Home</a> 
-                <a href="about.html">About</a> 
-                <a href="Services.html">Services</a> 
-                <a href="Products.html">Products</a> 
-                <a href="Contact.html">Contact Us</a>
-                <a href="Testimonials.html">Testimonials</a> 
-                <a href="registration.html">Register Here</a>
-        
-                <div class="topnav-right">
-                    <a href="signup.html">Sign Up</a>
-                    <a href="signin.html">Sign In</a>
-                </div>
-                </div>
+            <?php include_once("template/nav.php");?>
 
 <div class="header">
     <h1>Talk To Us</h1>
