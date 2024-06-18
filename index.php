@@ -1,14 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
 
-    <title>Welcome - pagee</title>
-
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-    <?php include_once("template/nav.php");?>
+<?php include_once("templates/header.php");?>
+<?php include_once("templates/nav.php");?>
 <div class="header">
     <h1>Header</h1>
 
@@ -69,24 +61,6 @@
  </ol>
 
 </div>
-<div class="side_bar">
-    <!--Chapter Two Starts Here-->
-    <h2>Chapter Two</h2>
-    <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-        Laudantium quas eveniet, est iusto cupiditate 
-        ducimus recusandae iste nostrum necessitatibus 
-        incidunt sunt ad at consectetur eos perspiciatis 
-        dolore magni illum? Dolores.
-     </p>
-     <!--Chapter Two Ends Here-->
-     
-     </div>
+<?php include_once("templates/side_bar.php");?>
 </div>    
-<div class="footer">
-    Copyright - BBIT 2.1 &copy; - Allrights Reserved
-</div>
-    
-</body>
-
-</html>
+<?php include_once("templates/footer.php");?>

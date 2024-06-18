@@ -1,16 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    
-    <link rel="stylesheet" href="css.css.style">
-    
-    </head>
-    <body>
-    <?php include_once("template/nav.php");?>
+
+<?php include_once("templates/header.php");?>
+<?php include_once("templates/nav.php");?>
         
 <div class="header">
-            <h1>About me<h1>
+            <h1>About us<h1>
  </div>  
         <div class="row">
             <div class="content">
@@ -21,10 +14,8 @@
 
         <img src="images/pexelsoliadanilevich.jpg" width="40%" alt="">
     </div>
+    <?php include_once("templates/side_bar.php");?>
 </div>
-<div class="footer">
-    Copyright - BBIT 2.1 &copy; - Allrights Reserved
-</div>
+<?php include_once("templates/footer.php");?>
 
-    </body>
-        </html>
+    

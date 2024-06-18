@@ -1,12 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head> 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-<?php include_once("template/nav.php");?>
+
+<?php include_once("templates/header.php");?>
+<?php include_once("templates/nav.php");?>
     <div class="header">
    <h1>Testimonials</h1>
     </div>
@@ -29,9 +23,6 @@
 <img src="images/pexelfauxels.jpg" width="20%"/>
 <img src="images/pexelsoliadanilevich.jpg" width="20%"/>
         </div>
+        <?php include_once("templates/side_bar.php");?>
     </div>
-    <div class="footer">
-        Copyright - BBIT 2.1 &copy; - Allrights Reserved
-    </div>
-</body>
-</html>
+    <?php include_once("templates/footer.php");?>
