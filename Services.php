@@ -16,7 +16,7 @@
       
 
 </p>
-<img src="images/pexelsluisgomes.jpg" width="20%"/>
+<img src="images/pexelsluisgomes.jpg" width="40%"/>
     </div>
     <?php include_once("templates/side_bar.php");?>
   </div>

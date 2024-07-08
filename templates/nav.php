@@ -5,7 +5,7 @@
         <a href="Products.php">Products</a> 
         <a href="Contact.php">Contact Us</a> 
         <a href="Testimonials.php">Testimonials</a> 
-        <a href="registration.php">Register Here</a>
+        <a href="Terms and privacy policy.php">Terms and Conditions</a>
         
         <div class="topnav-right">
             <a href="signup.php">Sign Up</a>

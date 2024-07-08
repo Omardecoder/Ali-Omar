@@ -2,7 +2,7 @@
 <?php include_once("templates/header.php");?>
 <?php include_once("templates/nav.php");?>
 <div class="header">
-    <h1>Header</h1>
+    <h1>Home</h1>
 
 </div>
 <div class="row">
