@@ -1,5 +1,5 @@
 body{
-    background-color: rgb(238, 238, 238);
+    background-color: rgb(49, 7, 7);
     margin: 0;
 }
 *{
@@ -9,7 +9,7 @@ body{
     padding: 20px;
     text-align: center;
     background-color: #373737;
-    color: rgb(238, 238, 238);
+    color: rgb(43, 43, 43);
 }
 .row:after{
     content: "";
@@ -44,6 +44,6 @@ body{
     padding: 20px;
     text-align: center;
     background-color: #373737;
-    color: rgb(238, 238, 238);
+    color: rgb(10, 1, 1);
     font-size: 0.7em;
 }

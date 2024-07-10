@@ -1,10 +1,10 @@
 .topnav{
-    background-color: rgb(168, 154, 154);
+    background-color: rgb(87, 85, 85);
     overflow: hidden;
 }
 
 .topnav a{
-    color: #695a5a;
+    color: #393434;
     float: left;
     display: block;
     text-decoration: none;
@@ -12,8 +12,8 @@
     padding: 14px 16px;
 }
 .topnav a:hover{
-    color: rgb(214, 114, 114);
-    background-color: #373737;
+    color: rgb(41, 0, 0);
+    background-color: #afa6a6;
     text-decoration: none;
 }
 

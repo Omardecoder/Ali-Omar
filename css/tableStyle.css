@@ -1,5 +1,5 @@
 table{
-    border: solid 1px #373737;
+    border: solid 1px #2c74c7;
     width: 70%;
     border-collapse: collapse;
 }
@@ -9,7 +9,7 @@ td{
     text-align: left;
 }
 th{
-    background-color: rgba(0, 0, 0, 90%);
+    background-color: rgba(20, 1, 1, 0.9);
     color: rgba(255, 255, 255, 90%);
     padding: 5px;
     text-align: left;

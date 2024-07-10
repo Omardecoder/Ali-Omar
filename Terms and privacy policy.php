@@ -1,5 +1,5 @@
 
-    <?php require_once("includes/db_connect.php");?>
+    
     <?php include_once("templates/header.php");?>
     <?php include_once("templates/nav.php");?>
     <div class="header">
