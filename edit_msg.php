@@ -3,9 +3,9 @@
     include_once("templates/header.php");
     include_once("templates/nav.php");
 
-    $messageId = mysqli_real_escape_string($conn, $_GET["messageId"]);
+    $employerId = mysqli_real_escape_string($conn, $_GET["employerId"]);
 
-    $spot_msg = "SELECT * FROM `messages` WHERE messageId = '$messageId' LIMIT 1";
+    $spot_msg = "SELECT * FROM `employers` WHERE employerId = '$employerId' LIMIT 1";
     $spot_msg_res = $conn->query($spot_msg);
     $spot_msg_row = $spot_msg_res->fetch_assoc();
 
@@ -14,12 +14,12 @@
         $email = mysqli_real_escape_string($conn, $_POST["email_address"]);
         $subject_line = mysqli_real_escape_string($conn, $_POST["subject_line"]);
         $text_message = mysqli_real_escape_string($conn, $_POST["message"]);
-        $messageId = mysqli_real_escape_string($conn, $_POST["messageId"]);
+        $employerId = mysqli_real_escape_string($conn, $_POST["employerId"]);
 
-        $update_message = "UPDATE messages SET sender_name = '$fullname', sender_email = '$email', subject_line = '$subject_line', message = '$text_message' WHERE messageId='$messageId' LIMIT 1";
+        $update_message = "UPDATE employers SET sender_name = '$fullname', sender_email = '$email', subject_line = '$subject_line', message = '$text_message' WHERE employerId='$employerId' LIMIT 1";
       
         if ($conn->query($update_message) === TRUE) {
-            header("Location: view_messages.php");
+            header("Location: view_employers.php");
             exit();
         } else {
             echo "Error: " . $update_message . "<br>" . $conn->error;
@@ -52,7 +52,7 @@
     <label for="ms">Message:</label><br>
     <textarea cols="30" rows="7" name="message" id="ms" required><?php print $spot_msg_row["message"]; ?></textarea><br><br>
     <input type="submit" name="update_message" value="Update Message" >
-    <input type="hidden" name="messageId" value="<?php print $spot_msg_row["messageId"]; ?>" >
+    <input type="hidden" name="employerId" value="<?php print $spot_msg_row["employerId"]; ?>" >
 </form>
 </div>
 <?php include_once("templates/side_bar.php");?>

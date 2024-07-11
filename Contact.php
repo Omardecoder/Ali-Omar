@@ -11,7 +11,7 @@ $email= mysqli_real_escape_string ($conn, $_POST["email_address"]);
 $subject_line= mysqli_real_escape_string ($conn,$_POST["subject_line"]);
 $text_message= mysqli_real_escape_string ($conn,$_POST["message"]);
 
-$insert_message= "INSERT INTO messages (sender_name, sender_email, subject_line, message)
+$insert_employers= "INSERT INTO employers (sender_name, sender_email, subject_line, message)
 VALUES ('$fullname', '$email', '$subject_line', '$text_message')";
 
 if ($conn->query($insert_message) === TRUE) {
@@ -49,6 +49,12 @@ if ($conn->query($insert_message) === TRUE) {
 
         <label for="email">Email Address:</label><br>
         <input type="email" id="email" name="email_address " placeholder="Email address"required ><br><br>
+        <input type="color" placeholder=""><br><br>
+
+        <input type="number" placeholder="Age" required ><br><br>
+        <label for="Age">Age:</label><br>
+        
+
         
         
         <label for="sb">Subject:</label><br>

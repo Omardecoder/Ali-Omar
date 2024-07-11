@@ -7,10 +7,10 @@
         $DelId = mysqli_real_escape_string($conn, $_GET["DelId"]);
         
         // sql to delete a record
-        $del_msg = "DELETE FROM `messages` WHERE messageId='$DelId' LIMIT 1";
+        $del_msg = "DELETE FROM `employers` WHERE employerId='$DelId' LIMIT 1";
         
         if ($conn->query($del_msg) === TRUE) {
-            header("Location: view_messages.php");
+            header("Location: view_employers.php");
             exit();
         } else {
         echo "Error deleting record: " . $conn->error;
@@ -19,13 +19,13 @@
 
     ?>
 <div class="header">
-    <h1>Messages</h1>
+    <h1>employers</h1>
 </div>
         
 <div class="row">
     <div class="content">
 
-    <h1>Messages</h1>
+    <h1>employers</h1>
     <p>Lorem ipsum dolor sit amet, laborum</p>
     <table>
         <thead>
@@ -39,7 +39,7 @@
         </thead>
         <tbody>
 <?php
-$select_msg = "SELECT * FROM `messages` ORDER BY datecreated DESC";
+$select_msg = "SELECT * FROM `employers` ORDER BY datecreated DESC";
 $sel_msg_res = $conn->query($select_msg);
 $cm=0;
 if ($sel_msg_res->num_rows > 0) {
@@ -53,7 +53,7 @@ if ($sel_msg_res->num_rows > 0) {
             <td><?php print $sel_msg_row["sender_email"]; ?></td>
             <td><?php print '<strong>' . $sel_msg_row["subject_line"] .'</strong> - ' . substr($sel_msg_row["message"], 0, 25) . '...' ?></td>
             <td><?php print date("d-M-Y H:i", strtotime($sel_msg_row["datecreated"])); ?></td>
-            <td>[ <a href="edit_msg.php?messageId=<?php print $sel_msg_row["messageId"]; ?>">Edit</a> ] [ <a href="?DelId=<?php print $sel_msg_row["messageId"]; ?>" onclick="return confirm('Are you sure you want to delete this message permanently from the database ?')">Del</a> ]</td>
+            <td>[ <a href="edit_msg.php?employerId=<?php print $sel_msg_row["employerId"]; ?>">Edit</a> ] [ <a href="?DelId=<?php print $sel_msg_row["employerId"]; ?>" onclick="return confirm('Are you sure you want to delete this message permanently from the database ?')">Del</a> ]</td>
         </tr>
 <?php
   }
